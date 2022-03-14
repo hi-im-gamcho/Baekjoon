@@ -1,0 +1,8 @@
+N, X = [int(x) for x in input().split()]
+A = list(map(int, input().split()))
+
+for i in A:
+    if i < X:
+        print(i, end=' ')
+
+    
