@@ -4,7 +4,7 @@ count_list = []
 
 for i in word_list:
     cnt = word.count(i)     # cnt에 각 알파벳이 몇개 있는지 저장
-    count_list.append(cnt)  # 리스트에 옮겨 담기
+    count_list.append(cnt)  # 리스트에 옮겨 담기 / [1,4,4,1]
 
 # count_list의 최댓값의 개수가 1 이상이라면 '?' 를 출력
 if count_list.count(max(count_list)) > 1:

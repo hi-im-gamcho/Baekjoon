@@ -47,4 +47,7 @@ for alphabet in alphabets:
 # 7. "upper()", "lower()"함수
 # 형태 : '문자열'.upper(또는 lower)()
 # 용도 : 문자열을 대문자 또는 소문자로 바꾸기 위해 사용
+
+# 8. 
+
     
