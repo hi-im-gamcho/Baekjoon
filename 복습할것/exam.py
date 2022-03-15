@@ -1,4 +1,7 @@
-list_num = []
-for i in range (1, 9+1):
-    list_num.append(int(input()))
-print(list_num)
+word = "dkssudgktpdy"       # 일 때
+
+word2 = list(word)
+word3 = [word]
+
+print(word2)
+print(word3)

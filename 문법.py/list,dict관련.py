@@ -12,3 +12,9 @@ reversed(numbers)
 # 3. 확장 슬라이싱 : 리스트를 뒤집는 또다른 방법
 # str에도 적용 가능하다 / int형에는 x !!
 numbers[::-1]
+
+# 4. 리스트화 하는 과정
+word = "dkssudgktpdy"       # 일 때, 아래와 같은 차이점이 있다.
+
+word2 = list(word)      # >>> ['d', 'k', 's', 's', 'u', 'd', 'g', 'k', 't', 'p', 'd', 'y']
+word3 = [word]          # >>> ['dkssudgktpdy']
