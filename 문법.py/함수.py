@@ -65,6 +65,7 @@ a.strip().strip('a')
 # 용도 : 문자열(string) 내 원하는 문자 변경. a 내에 있는 b를 c로 바꿈
 # 여러 글자 -> 한글자 / 한글자 -> 여러 글자 또는 
 # 빈 문자열로 바꾸는 것(=특정 문자(열)지움)도 가능하다
+# 비파괴적 함수 
 a = 'abcde abcde abcde'
 a.replace('a', 'z')         # >>> zbcde zbcde zbcde
 a.replace('a', 'zzz')       # >>> zzzbcde zzzbcde zzzbcde
