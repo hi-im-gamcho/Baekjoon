@@ -1,11 +1,12 @@
-N = input()
-count = 0   
-N_list = list(map(int, N))
-print(N_list)
+N = n  = int(input())     # 26
+count = 0
 
-for i in range(1, int(N)+1):              
-    if i < 100:                    
-        count += 1
-    elif N_list[0] - N_list[1] == N_list[1] - N_list[2]:
-        count += 1 
+while True:
+    ten = n//10                         # 2
+    one = n%10                          # 6
+    s = ten + one                       # 8
+    count += 1
+    new = int(str(one) + str(s%10))          # 68
+    if new==N:
+        break
 print(count)
