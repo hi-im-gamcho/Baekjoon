@@ -1,12 +1,14 @@
-N = n  = int(input())     # 26
-count = 0
+n = int(input())        # 13
 
-while True:
-    ten = n//10                         # 2
-    one = n%10                          # 6
-    s = ten + one                       # 8
-    count += 1
-    new = int(str(one) + str(s%10))          # 68
-    if new==N:
-        break
-print(count)
+# 1
+# 6 * 1
+# 6 * 2
+# 6 * 3
+
+house = 1
+cnt = 1
+
+while n > house:        # 13 > 1    13>7        13<19
+    house += 6*cnt      # 1+6=7     7+12=19
+    cnt += 1            # cnt==2    cnt==3
+print(cnt)
