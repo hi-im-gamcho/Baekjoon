@@ -1,14 +1,9 @@
-n = int(input())        # 13
+a = int(input())
+b = int(input())
+c = int(input())
 
-# 1
-# 6 * 1
-# 6 * 2
-# 6 * 3
+mul = a*b*c 
+list_mul = list(str(mul))
 
-house = 1
-cnt = 1
-
-while n > house:        # 13 > 1    13>7        13<19
-    house += 6*cnt      # 1+6=7     7+12=19
-    cnt += 1            # cnt==2    cnt==3
-print(cnt)
+for i in range(0, 9+1):
+    print(list_mul.count(str(i)))
