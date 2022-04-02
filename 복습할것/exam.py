@@ -1,9 +1,8 @@
-a = int(input())
-b = int(input())
-c = int(input())
+a = input()         # 472
+b = input()         # 385
 
-mul = a*b*c 
-list_mul = list(str(mul))
+list_a = list(a)
+list_b = list(b)
 
-for i in range(0, 9+1):
-    print(list_mul.count(str(i)))
+for i in range (0, 2+1, 1):
+    print(int(a) * int(list(b)[2-i]))
