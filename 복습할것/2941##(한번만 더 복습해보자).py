@@ -1,6 +1,6 @@
 alphabet = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
 
-word = input()
+word = input() # ljes=njak
 
 for i in alphabet:
     word = word.replace(i, '+')
