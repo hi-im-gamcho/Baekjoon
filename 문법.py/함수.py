@@ -22,7 +22,7 @@ print(b)
 
 num = list(map(int, input()))
 print(num)
-# a = [123] 형태와의 차이점 -> 오마분시 여부
+# a = [123] // 오마분시 x
 
 # 4. "map()" 함수
 # 형태 : "map(함수, iterable)"
