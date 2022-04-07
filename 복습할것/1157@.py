@@ -9,5 +9,3 @@ if result.count(max(result)) > 1:   # 최댓값의 개수가 1개 이상이라�
     print('?')
 else:
     print(word_set[result.index(max(result))])
-
-
