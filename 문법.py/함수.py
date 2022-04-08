@@ -20,10 +20,6 @@ b = list("124")
 print(b)
 # >>> ['1,2,4']
 
-num = list(map(int, input()))
-print(num)
-# a = [123] // 오마분시 x
-
 # 4. "map()" 함수
 # 형태 : "map(함수, iterable)"
 # 용도 : iterable 의 각 요소들을 함수처리하여 반환한다

@@ -14,4 +14,5 @@ for i in range(N):
 print(result)
 
 # 1. in 연산자를 사용.
-# 2. 조건을 만족하면 break문을 이용하여 함수를 종료.
+# 2. if 문에서 아무런 문제가 없으면 pass
+# 3. 조건을 만족하면 break문을 이용하여 함수를 종료.

@@ -7,5 +7,5 @@ for i in word_set:
             
 if result.count(max(result)) > 1:   # 최댓값의 개수가 1개 이상이라면
     print('?')
-else:
+else :
     print(word_set[result.index(max(result))])
