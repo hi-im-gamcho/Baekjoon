@@ -1,12 +1,12 @@
-N = int(input())
-num_group_word = N
+list_num = []
+list_left = []
 
-for i in range(N):
-    word = input()                      # apple
 
-    for x in range(len(word)-1):
-        if word[x] == word[x+1]:
-            pass
-        elif word[x] == word[x+1:]:
-            num_group_word -= 1 
-            break
+for i in range(0, 9+1):
+    list_num.append(int(input()))          # [1,2,3,4,5,6,7,8,9,43]
+
+for i in list_num:
+    list_left.append(i%42)
+
+
+print(len(list(set(list_left))))
