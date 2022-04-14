@@ -75,4 +75,9 @@ a.replace(' ', 'ㅋ')        # >>> abcdeㅋabcdeㅋabcde
 # 특수 케이스 : 모든 글자 사이에 z 추가                   
 a.replace('', 'z')          # >>> zazbzczdze zazbzczdze zazbzczdze  
 
+
 # 10. "split()" 함수
+
+
+# 11. 'sum()'
+# ()내부의 내용물을 다 더한다.
