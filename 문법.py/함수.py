@@ -77,7 +77,11 @@ a.replace('', 'z')          # >>> zazbzczdze zazbzczdze zazbzczdze
 
 
 # 10. "split()" 함수
+# 형태 : 객체.split()
+# 용도 : 객체를 ()안에 들어있는 것을 기준으로 쪼갬.   
 
 
 # 11. 'sum()'
 # ()내부의 내용물을 다 더한다.
+
+
