@@ -1,21 +1,25 @@
-input_num = int(input())
-line_num = 0
-max_num = 0
+T = int(input())    # test case
 
-while input_num > max_num:
-    line_num += 1               # line_num 이 하나씩 증가할 때 마다
-    max_num += line_num         # max_num - min_num 도 하나씩 증가. 
+k = int(input())
+n = int(input())
 
-gap = max_num - input_num
+floor = []
+ho = []
 
-if line_num % 2 == 0:
-    top = line_num - gap
-    bot = gap + 1
-else:
-    top = gap + 1
-    bot = line_num - gap
+for i in range(1, n+1):
+    ho.append(i)
 
- 
-# 1 / 2 / 3 / 4 
+floor.append(ho)
+ho = []         # 호 초기화
 
- 
+for x in range(1, k+1):
+    for i in range(1, n+1):
+        ho.append(sum(floor[x-1][0:i+1]))
+
+    floor.append(ho)
+# [
+#     [1,2,3,4,5,6],
+#     [],
+#     [],
+#     []
+# ]
