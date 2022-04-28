@@ -39,3 +39,23 @@ a.extend(b)     # a = [1,2,3,4,5,6]
 # - 리스트명.clear()                    리스트 내부의 모든것 제거
 a = [1,2,3]
 a.clear()      # a = []
+
+
+# 7. enumerate()
+# - '리스트'의 요소를 반복할 때, 현재 인덱스가 몇 번째인지 확인해야 하는 경우 사용.
+# - iterable에 대한 이해 필요. 
+list_a = ['요소1', '요소2', '요소3']
+
+print(f"리스트에 enumerate 함수를 적용한 출력 형태 : {list(enumerate(list_a))}") 
+# 결과 : [(0, '요소1'), (1, '요소2'), (2, '요소3')]
+
+for i, value in enumerate(list_a):
+    print(f'index : {i}, value : {value}')
+# 결과 : index : 0, value : 요소1
+#        index : 1, value : 요소2
+#        index : 2, value : 요소3
+
+
+
+# 8. item()
+# - '딕셔너리의' 키와 값을 조합해야할 때 사용.
