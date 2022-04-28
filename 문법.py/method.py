@@ -22,7 +22,7 @@ print(b)
 
 # 4. "map()" 함수
 # 형태 : "map(함수, iterable)"
-# 용도 : iterable 의 각 요소들을 함수처리하여 반환한다
+# 용도 : iterable 의 각 요소들을 함수처리하여 반환한다.
 # list화 시켜야 출력 가능 
 sub_num = list(map(int, input().split()))
 print(sub_num)
@@ -103,8 +103,6 @@ a.replace('', 'z')          # >>> zazbzczdze zazbzczdze zazbzczdze
 # '문자열 슬라이싱[::-1]' : 역순을 의미
 # - ex) map(int, input()[::-1].split())
 
+14. 
 
-# 14. "map()"
-# 형태 :
-# 기능 : 
-#
+

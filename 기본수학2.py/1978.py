@@ -12,7 +12,7 @@ for number in numbers:
         for i in range(2, number):  # 2 ~ number-1
             if number % i == 0:
                 error += 1
-                break
+                break       # 이건 필요 없는거같아...
         if error == 0:
             sosu += 1
 
