@@ -8,7 +8,7 @@ sosu = []
 
 for i in range(m, n+1):         # M이상 N이하의 자연수
     not_sosu = 0
-    if i == 0 or i == 1:             
+    if i == 1:             
         pass
     else:
         for x in range(2, i):   # 2 ~ i-1
