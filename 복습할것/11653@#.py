@@ -7,3 +7,4 @@ while n != 1:
         print(i)
     else: 
         i += 1 
+       
