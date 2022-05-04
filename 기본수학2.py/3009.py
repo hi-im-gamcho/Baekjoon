@@ -12,7 +12,7 @@ elif x3 == x1:
     x4 = x2
 
 if y1 == y2:
-    y4 = y3
+    y4 = y3 
 elif y2 == y3:
     y4 = y1
 elif y3 == y1:

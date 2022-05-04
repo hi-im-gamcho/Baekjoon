@@ -76,6 +76,7 @@ a.replace(' ', 'ㅋ')        # >>> abcdeㅋabcdeㅋabcde
 a.replace('', 'z')          # >>> zazbzczdze zazbzczdze zazbzczdze  
 
 
+
 # 10. "split()" 함수
 # 형태 : 객체.split()
 # 기능 : 객체를 ()안에 들어있는 것을 기준으로 쪼갬.
@@ -85,14 +86,18 @@ a.replace('', 'z')          # >>> zazbzczdze zazbzczdze zazbzczdze
 # split()은 공백이 몇 칸이든 상관없어 전부 없애준다.
 
 
+
 # 11. 'sum()'
 # ()내부의 내용물을 다 더한다.
+# -ex) sum(10, 30, 50) -> 90 
+
 
 
 # 12. "zfill()"
 # 형태 : '문자열'.zfill(전체 문자열의 길이)
 # 기능 : 문자열 앞에 원하는 만큼 0으로 채움.
 # 전체 문자열의 길이가 문자열의 길이와 같거나 그 이상일 때는 0이 출력되지 않는다.
+
 
 
 # 13. "reverse()" 와 '문자열 슬라이싱[::-1]'
@@ -103,6 +108,17 @@ a.replace('', 'z')          # >>> zazbzczdze zazbzczdze zazbzczdze
 # '문자열 슬라이싱[::-1]' : 역순을 의미
 # - ex) map(int, input()[::-1].split())
 
-14. 
+
+
+# 14. "abs()"
+# 형태 : abs(숫자)
+# 기능 : 절댓값을 반환한다.
+# - ex) print(abs(-1, -10))
+
+
+
+# 15. 'min()', 'max()'
+# 형태 : min(숫자들 또는 객체)
+# 기능 : 최소, 최댓값 반환.
 
 
