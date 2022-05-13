@@ -1,8 +1,9 @@
-a, b, v = map(int, input().split())
+def draw_stars(n):
+    if n==1:
+        return '*'
 
-day = (v-a)/(a-b)+1
+n = int(input())
+Stars=draw_stars(n//3)
 
-if day == int(day):
-    print(day)
-else: 
-    print(int(day)+1)
+print(draw_stars(n))
+print(Stars)
