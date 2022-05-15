@@ -18,4 +18,3 @@ def draw_star(n):
 
 print('\n'.join(draw_star(n)))
 
- 
