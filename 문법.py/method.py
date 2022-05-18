@@ -80,6 +80,7 @@ a.replace('', 'z')          # >>> zazbzczdze zazbzczdze zazbzczdze
 # 10. "split()" 함수
 # 형태 : 객체.split()
 # 기능 : 객체를 ()안에 들어있는 것을 기준으로 쪼갬.
+# 비파괴적 함수이다.
 
 # split() vs split(' ')
 # split(' ')은 공백을 하나 없애주고, 나머지 공백은 각각을 하나의 요소로 만들어준다.

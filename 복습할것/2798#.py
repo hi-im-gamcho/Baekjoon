@@ -10,4 +10,4 @@ for a in range(n):
             if num[a] + num[b] + num[c] <= m:
                 result.append(num[a] + num[b] + num[c])
 
-print(max(result)) 
+print(max(result))
