@@ -1,0 +1,22 @@
+0. import sys
+
+1. sys.stdin.readline() : 기본 내장함수인 input()과 같은 역할을 수행.
+    - '반복문으로 여러줄을 입력받는 상황일 때' 사용.
+    - 한줄 단위로 입력받기 때문에, '개행문자(\n)가 같이 입력받아진다.' (ex. '3'을 입력하면 '3\n'이 저장된다. 따라서 필요없다면 strip()으로 개행문자 제거해주자.) 
+    - 또한, '변수 타입이 문자열 형태(str)로 저장'되기 때문에, 정수로 사용하기 위해서 형변환을 거쳐야 함. 
+
+    - 정해진 개수의 정수를 한줄에 입력받을 때
+        - a,b,c = map(int,sys.stdin.readline().split()) ; strip()로 공백문자를 제거.
+
+    - 임의의 개수의 정수를 한줄에 입력받아 리스트에 저장할 때
+        - data = list(map(int,sys.stdin.readline().split()))    ; strip()로 공백문자를 제거.
+    
+    - 임의의 개수의 정수를 n줄 입력받아 2차원 리스트에 저장할 때
+        - data = []
+        - n = int(sys.stdin.readline())
+        - for i in range(n):
+        -     data.append(list(map(int,sys.stdin.readline().split())))  ; strip()로 공백문자를 제거.
+
+    - 문자열 n줄을 입력받아 리스트에 저장할 때
+        - n = int(sys.stdin.readline())
+        - data = [sys.stdin.readline().strip() for i in range(n)]   ; strip()로 공백문자를 제거.
