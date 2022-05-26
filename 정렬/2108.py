@@ -20,8 +20,7 @@ cnt = Counter(num_list).most_common()
 if len(cnt) > 1 and cnt[0][1] == cnt[1][1]: # 빈도수가 같은게 2개 이상 있다면 
     print(cnt[1][0])
 else:
-    print(cnt)
-    print([0][0])
+    print(cnt[0][0])
 
 # 범위
 print(max(num_list) - min(num_list))

@@ -1,6 +1,9 @@
 # 리스트와 관련된 새로 알게된 것들
 
 # 1. "리스트명.index(요소)" : 리스트의 인덱스를 반환 할 수 있다.
+from ast import comprehension
+
+
 list_n = [1,2,3]
 print(list_n.index(2))
 
@@ -59,3 +62,7 @@ for i, value in enumerate(list_a):
 
 # 8. item()
 # - '딕셔너리의' 키와 값을 조합해야할 때 사용.
+
+
+
+# 9. List Comprehension (https://blog.naver.com/hhyun3032/222720858076)

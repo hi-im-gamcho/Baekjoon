@@ -6,6 +6,9 @@
 list_n = [1,2,3]
 print(list_n.index(2))
 
+
+
+
 # 2. ".count()" 함수
 # 형태 : 객체.count(찾고자하는 것(=a))
 # 용도 : 객체 내에서 a가 몇번 들어가있는지 확인할 수 있다.
@@ -13,12 +16,18 @@ print(list_n.index(2))
 for i in range(0, 9+1):
     print(list_mul.count(str(i)))
     
+
+
+
 # 3. "list()" 함수
 # 형태 : list('str형태'의 것들 또는 문자열(=a))
 # 용도 : a를 '오마분시해서' 리스트로 만들어 반환
 b = list("124")
 print(b)
 # >>> ['1,2,4']
+
+
+
 
 # 4. "map()" 함수
 # 형태 : map(함수, iterable)
@@ -27,10 +36,16 @@ print(b)
 sub_num = list(map(int, input().split()))
 print(sub_num)
 
+
+
+
 # 5. "ord()" 함수
 # 형태 : ord(숫자 또는 알파벳 대,소문자)
 # 용도 : 문자 또는 숫자의 아스키 코드 값을 되돌려주는 함수
 print(ord(input()))
+
+
+
 
 # 6. "chr()" 함수
 # 형태 : chr(아스키코드 값)
@@ -41,9 +56,15 @@ alphabets = list(range(97, 123))    # 알파벳의 아스키코드 범위
 for alphabet in alphabets:
     print(word.find(chr(alphabet)))
 
+
+
+
 # 7. "upper()", "lower()"함수
 # 형태 : '문자열'.upper(또는 lower)()
 # 용도 : 문자열을 대문자 또는 소문자로 바꾸기 위해 사용
+
+
+
 
 # 8. "strip()", "lstrip()", "rstrip()"함수
 # 형태 : 문자열.strip()
@@ -55,6 +76,9 @@ a = ' abcba\n\t'
 a.strip()               # >>> 'abcba'
 # 여러번 연속 사용이 가능하다
 a.strip().strip('a')
+
+
+
 
 # 9. "replace()"함수
 # 형태 : "a.replace('b', 'c')"     a,b,c는 모두 문자열 
