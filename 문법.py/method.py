@@ -1,39 +1,39 @@
 # 함수 정리
 
 # 1. ".index())" 함수
-# 형태 : "리스트명.index(요소)"
+# 형태 : 리스트명.index(요소)
 # 용도 : 객체 내에서 요소가 몇 번째 인덱스(=위치)인지 확인할 수 있다.
 list_n = [1,2,3]
 print(list_n.index(2))
 
 # 2. ".count()" 함수
-# 형태 : "객체.count(찾고자하는 것(=a))"
+# 형태 : 객체.count(찾고자하는 것(=a))
 # 용도 : 객체 내에서 a가 몇번 들어가있는지 확인할 수 있다.
 # a는 'str' 형태여야 한다
 for i in range(0, 9+1):
     print(list_mul.count(str(i)))
     
 # 3. "list()" 함수
-# 형태 : "list('str형태'의 것들 또는 문자열(=a))"
+# 형태 : list('str형태'의 것들 또는 문자열(=a))
 # 용도 : a를 '오마분시해서' 리스트로 만들어 반환
 b = list("124")
 print(b)
 # >>> ['1,2,4']
 
 # 4. "map()" 함수
-# 형태 : "map(함수, iterable)"
+# 형태 : map(함수, iterable)
 # 용도 : iterable 의 각 요소들을 함수처리하여 반환한다.
 # list화 시켜야 출력 가능 
 sub_num = list(map(int, input().split()))
 print(sub_num)
 
 # 5. "ord()" 함수
-# 형태 : "ord(숫자 또는 알파벳 대,소문자)"
+# 형태 : ord(숫자 또는 알파벳 대,소문자)
 # 용도 : 문자 또는 숫자의 아스키 코드 값을 되돌려주는 함수
 print(ord(input()))
 
 # 6. "chr()" 함수
-# 형태 : "chr(아스키코드 값)"
+# 형태 : chr(아스키코드 값)
 # 용도 : 아스키코드에 해당하는 숫자를 문자열로 변환
 word = input()
 alphabets = list(range(97, 123))    # 알파벳의 아스키코드 범위
@@ -82,6 +82,8 @@ a.replace('', 'z')          # >>> zazbzczdze zazbzczdze zazbzczdze
 # 기능 : 객체를 ()안에 들어있는 것을 기준으로 쪼갬.
 # 비파괴적 함수이다.
 
+# ex1) 'how are you?'.split() => ['how', 'are', 'you?']  
+
 # split() vs split(' ')
 # split(' ')은 공백을 하나 없애주고, 나머지 공백은 각각을 하나의 요소로 만들어준다.
 # split()은 공백이 몇 칸이든 상관없어 전부 없애준다.
@@ -124,7 +126,7 @@ a.replace('', 'z')          # >>> zazbzczdze zazbzczdze zazbzczdze
 
 
 
-# 16. 'join()
+# 16. 'join()'
 # 형태 : '구분자'.join(리스트)
 # 기능 : 매개변수로 들어온 리스트에 내부의 요소 하나하나를 합쳐서 하나의 '문자열로 바꾸어 반환'.
 #        이때 구분자는 리스트의 요소 사이에 들어가 요소들을 구분하는 역할을 한다.
@@ -133,3 +135,20 @@ a.replace('', 'z')          # >>> zazbzczdze zazbzczdze zazbzczdze
 # -ex1) join(['a', 'b', 'c'])    =>      'abc'      =>      구분자가 없는 경우.
 # -ex2) '*'.join(['a', 'b', 'c'])   =>   'a*b*c
 # -ex3) ' '.join(['a', 'b', 'c'])    => 'a b c'      =>     구분자가 공백인 경우.
+
+
+
+# 17. 'capitalize()' vs 'title()' vs 'swapcase()'
+# 형태 : 문자열.capitalize() / 문자열.title() / 문자열.swapcase()
+# 기능 : 문자열의 첫 글자만을 대문자로 만든다. / 각 단어들의 첫 글자만을 대문자로 만든다. / 대문자와 소문자를 바꾼다.
+# -ex) a = 'how aRe you?'
+# -ex1) print(a.capitalize())   =>  How are you?
+# -ex2) print(a.title())        =>  How Are You?
+# -ex2) print(a.swapcase())     =>  HOW ArE YOU?
+
+
+
+# 18. 'startwith()' vs 'endwith()'
+# 형태 : 객체.startwith(a) / 객체.endwith(a)
+# 기능 : 객체가 a로 시작하는지 / 끝나는지 확인하고싶을 때 사용.
+# -ex) print('가천대학교'.startwith('가천')) => True
