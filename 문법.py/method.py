@@ -101,6 +101,7 @@ a.replace('', 'z')          # >>> zazbzczdze zazbzczdze zazbzczdze
 
 
 
+
 # 10. "split()" 함수
 # 형태 : 객체.split()
 # 기능 : 객체를 ()안에 들어있는 것을 기준으로 쪼갬.
@@ -114,9 +115,11 @@ a.replace('', 'z')          # >>> zazbzczdze zazbzczdze zazbzczdze
 
 
 
+
 # 11. 'sum()'
 # ()내부의 내용물을 다 더한다.
 # -ex) sum(10, 30, 50) -> 90 
+
 
 
 
@@ -137,6 +140,7 @@ a.replace('', 'z')          # >>> zazbzczdze zazbzczdze zazbzczdze
 
 
 
+
 # 14. "abs()"
 # 형태 : abs(숫자)
 # 기능 : 절댓값을 반환한다.
@@ -144,9 +148,11 @@ a.replace('', 'z')          # >>> zazbzczdze zazbzczdze zazbzczdze
 
 
 
+
 # 15. 'min()', 'max()'
 # 형태 : min(숫자들 또는 객체)
 # 기능 : 최소, 최댓값 반환.
+
 
 
 
@@ -162,6 +168,7 @@ a.replace('', 'z')          # >>> zazbzczdze zazbzczdze zazbzczdze
 
 
 
+
 # 17. 'capitalize()' vs 'title()' vs 'swapcase()'
 # 형태 : 문자열.capitalize() / 문자열.title() / 문자열.swapcase()
 # 기능 : 문자열의 첫 글자만을 대문자로 만든다. / 각 단어들의 첫 글자만을 대문자로 만든다. / 대문자와 소문자를 바꾼다.
@@ -172,7 +179,16 @@ a.replace('', 'z')          # >>> zazbzczdze zazbzczdze zazbzczdze
 
 
 
+
 # 18. 'startwith()' vs 'endwith()'
 # 형태 : 객체.startwith(a) / 객체.endwith(a)
 # 기능 : 객체가 a로 시작하는지 / 끝나는지 확인하고싶을 때 사용.
 # -ex) print('가천대학교'.startwith('가천')) => True
+
+
+
+
+# 19. 'filter()'
+# 형태 : filter(함수, 리스트)
+# 기능 : 리스트의 요소를 함수에 넣고, 리턴값이 True인 것으로 새로운 리스트를 구성해주는 함수.
+# -ex) new_list = filter(function, old_list)
