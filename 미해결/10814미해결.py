@@ -1,5 +1,23 @@
 import sys
 n = int(input())
+humans = [list(sys.stdin.readline().split()) for i in range(n)]
+
+for i in range(n):
+    humans[i][0] = int(humans[i][0])
+    
+humans.sort(key = lambda humans: humans[0])
+
+for i in range(n):
+    print("%d %s" %(int(humans[i][0]), humans[i][1]))
+
+# 반례 
+# 3
+# 100 a
+# 20 b
+# 3 c
+
+# 문제는 
+#--------------위는 처음 작성한 코드, 아래는 최종본.------------------------
 
 people = []
 
@@ -13,3 +31,7 @@ people.sort(key= lambda people: people[0])
 
 for i in range(n):
     print("%d %s" %(people[i][0], people[i][1]))
+
+
+
+

@@ -20,6 +20,9 @@
 # - ex) power = lambda x: x * x
 
 # 매개변수로 함수를 전달하기 위해 함수 구문을 작성하는 것이 번거롭고, 코드낭비일 때 사용.
+# sort(key=리스트[인덱스]) 로 정렬 시 
+# TypeError: 'list' object is not callable 이라는 오류를 해결하기 위해
+# sort(key=lambda 리스트: (리스트[인덱스0], 리스트[인덱스0])등처럼 사용되기도 한다. (https://blog.naver.com/hanjo1515/222454340410)
 
 # -ex1) key = lambda를 이용한 정렬. 
 # a = [(0,1), (2,3), (1,3), (5,10), (4,8), (9,9), (4,9)]

@@ -30,4 +30,6 @@
 
 2. sys.stdout.write() : print의 기능을 함.
     - 개행문자('\n')가 따로 입력되지 않음.
-    - () 내부의 값은 'str'형이어야만 함!    ->    형전환 필수!
+    - () 내부의 값은 'str'형이어야만 함!    ->    형전환 필수
+    - 내부에 한 개의 argument만 들어갈 수 있고, keyword arguments(ex. sep, end)는 들어갈 수 없다.
+    
