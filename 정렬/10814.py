@@ -2,9 +2,9 @@ import sys
 n = int(input())
 humans = [list(sys.stdin.readline().split()) for i in range(n)]
 
-for i in range(n):
-    humans[i][0] = int(humans[i][0])
-
+for i in range(n):                          # str형으로 저장되어있던 나이를 int형으로 안바꿔줘서 
+    humans[i][0] = int(humans[i][0])        # sort로 정렬했을때 문제가 발생했었다.
+                # 1000,101,10,1 등을 오름(내림)차순으로 정렬할 때 int, str형으로 저장되어있는지에 따라 정렬 결과가 다르다!!!!
 humans.sort(key = lambda humans: humans[0])
 
 for i in range(n):
