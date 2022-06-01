@@ -60,9 +60,15 @@ for i, value in enumerate(list_a):
 
 
 
-# 8. item()
-# - '딕셔너리의' 키와 값을 조합해야할 때 사용.
+# 8. 
 
 
 
-# 9. List Comprehension (https://blog.naver.com/hhyun3032/222720858076)
+
+# 9. 리스트 생성
+
+# -ex1) List Comprehension (리스트 내포) (https://blog.naver.com/hhyun3032/222720858076)
+
+# -ex2) card2 = [0] * 10    ->     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+# -ex3) card3 = list(map(int, input().split()))
