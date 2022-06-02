@@ -71,4 +71,4 @@ for i, value in enumerate(list_a):
 
 # -ex2) card2 = [0] * 10    ->     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-# -ex3) card3 = list(map(int, input().split()))
+# -ex3) card3 = list(map(int, input().split()))     ->      [1, 2, 3, 4, 5, 6]  

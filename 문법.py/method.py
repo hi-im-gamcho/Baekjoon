@@ -31,11 +31,16 @@ print(b)
 
 # 4. "map()" 함수
 # 형태 : map(함수, iterable)
-# 용도 : iterable 의 각 요소들을 함수처리하여 반환한다.
+# 용도 : iterable 의 '각 요소들을' '함수처리하여' 반환한다.
 # list화 시켜야 출력 가능 
+# -ex1)
 sub_num = list(map(int, input().split()))
 print(sub_num)
 
+# -ex2)
+n, m = map(int, input().split())    #1) 1 13  #2) 1 2 3
+print(n)    # 1     #2)에러 발생
+print(m)    # 13
 
 
 
