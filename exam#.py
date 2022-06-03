@@ -1,11 +1,4 @@
-import sys
+dic = {1: 11, 2: 22, 3: 33}
 
-input = sys.stdin.readline
-
-n = int(input().rstrip())
-nums = list(map(int, input().split()))
-result = {num: 1 for num in nums}
-
-
-print(result)
-    
+for i in range(5):
+    print(dic.get(i, 0), end=' ')

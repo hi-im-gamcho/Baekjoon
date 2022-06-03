@@ -12,7 +12,7 @@ num_list1 = list(map(int, input().split()))
 for num in num_list1:
     if result1.get(num, 0):
         print(1, end=' ')
-    else:
+    else:                       # 여긴 없어도 괜찮을듯? 
         print(0, end=' ')
         
 # 2. 이분탐색을 이용한 방법--------------------------------
