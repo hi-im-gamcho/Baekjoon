@@ -197,3 +197,10 @@ a.replace('', 'z')          # >>> zazbzczdze zazbzczdze zazbzczdze
 # 형태 : filter(함수, 리스트)
 # 기능 : 리스트의 요소를 함수에 넣고, 리턴값이 True인 것으로 새로운 리스트를 구성해주는 함수.
 # -ex) new_list = filter(function, old_list)
+
+
+
+
+# 20 '&'
+# 형태 : 'a&b' (a,b는 숫자, 문자열 또는 집합)
+# 기능 : a,b의 교집합을 return한다.
