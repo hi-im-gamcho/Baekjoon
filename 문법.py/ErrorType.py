@@ -16,6 +16,11 @@
 
 # 7. TypeError : 잘못된 타입을 전달했을 때 발생
 # ex) 숫자 연산에 str형 변수를 사용했을 때
+# ex1) TypeError: 'int' object is not subscriptable : 인덱스를 갖지 않는 값에 인덱스를 가지게 코드를 짤 경우 발생하는 오류.
+# ex2) TypeError: can only concatenate str (not "int") to str : 문자열(str)과 정수(int)를 이을(concatenate)려고 할 때 발생하는 오류.
+# ex3) TypeError: 'str' object cannot be interpreted as an integer
+# ex4) TypeError: 'str' object doesn't support item deletion : 문자열은 내부의 특정 글자들만 바꿀 순 없음. 바꾸고싶으면 아예 새로 선언해야함. (https://blog.naver.com/cartooni/222808877584)
+
 
 # 8. AttributeError : 참조나 대입에 실패한 경우 발생. 
 # "클래스(모듈)의 객체에 해당하는 메서드나 속성을 잘못 호출하거나 대입했을 때 발생하는 에러"

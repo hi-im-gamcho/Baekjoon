@@ -1,11 +1,18 @@
 # 함수 정리
 
-# 1. ".index())" 함수
-# 형태 : 리스트명.index(요소)
+# 1. ".index()" 함수 vs "find()" 함수
+# index()
+# 형태 : 리스트명.index(요소) / 
 # 용도 : 객체 내에서 요소가 몇 번째 인덱스(=위치)인지 확인할 수 있다.
+# 찾는 문자가 없으면 ValueError 에러를 발생
+# 문자열, 리스트, 튜플 자료형에서 사용이 가능
+# 딕셔너리 자료형에선 사용할 수 없음
 list_n = [1,2,3]
 print(list_n.index(2))
-
+# find()
+# 형태 : 문자열.find(찾을원소, 시작index값, 끝index값) -> 시작과 끝 인덱스값은 없어도됨.
+# 리스트, 튜플,딕셔너리 자료형에는 find함수를 사용할 수 없음.
+# 찾는 문자가 없을경우 -1을 출력함
 
 
 
@@ -37,10 +44,20 @@ print(b)
 sub_num = list(map(int, input().split()))
 print(sub_num)
 
-# -ex2)
+# -ex2) 할당
 n, m = map(int, input().split())    #1) 1 13  #2) 1 2 3
 print(n)    # 1     #2)에러 발생
 print(m)    # 13
+
+# -ex3) 올바른 예시
+n = int(input())                    # 123
+num_list = list(map(int, str(n)))   
+print(num_list)                     # [1,2,3]
+
+# -ex4) iterable이 문자열인 경우 (안녕하세요) 
+# -> ['안', '녕', '하', '세', '요']
+
+
 
 
 
@@ -90,7 +107,7 @@ a.strip().strip('a')
 # 용도 : 문자열(string) 내 원하는 문자 변경. a 내에 있는 b를 c로 바꿈
 # 여러 글자 -> 한글자 / 한글자 -> 여러 글자 또는 
 # 빈 문자열로 바꾸는 것(=특정 문자(열)지움)도 가능하다
-# 비파괴적 함수 
+# '비파괴적 함수' 
 a = 'abcde abcde abcde'
 a.replace('a', 'z')         # >>> zbcde zbcde zbcde
 a.replace('a', 'zzz')       # >>> zzzbcde zzzbcde zzzbcde
@@ -202,5 +219,13 @@ a.replace('', 'z')          # >>> zazbzczdze zazbzczdze zazbzczdze
 
 
 # 20 '&'
-# 형태 : 'a&b' (a,b는 숫자, 문자열 또는 집합)
-# 기능 : a,b의 교집합을 return한다.
+# 형태 : 'a & b' (a,b는 숫자, 문자열 또는 집합)
+# 기능 : a,b의 교집합을 return한다. 
+# list 에는 사용할 수 없고,
+# set 자료형에는 가능하다.
+
+
+
+# 21. 'isalpha', 'isdigit', 'isalnum', 'isspace'
+# 형태 : 문자열.isalpha()
+# 기능 : True 또는 False를 반환.
